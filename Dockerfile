@@ -6,7 +6,7 @@ RUN mkdir /usr/app
 WORKDIR /usr/app
 
 # COPY . /root/app
-COPY ./ ./
+COPY ./ /usr/app
 
 RUN npm install -g serve
 # RUN npm i
