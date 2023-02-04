@@ -1,6 +1,6 @@
 FROM node:latest
 
-# RUN mkdir /root/app
+RUN mkdir /usr/app
 
 # WORKDIR /root/app
 WORKDIR /usr/app
