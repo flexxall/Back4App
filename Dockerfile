@@ -2,12 +2,12 @@ FROM node:latest
 
 RUN mkdir /usr/app
 
-WORKDIR /app
+WORKDIR /usr/app
 
-COPY . /app
+COPY . /usr/app
 
-RUN npm install
+RUN npm install -g serve
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD serve -s dist
